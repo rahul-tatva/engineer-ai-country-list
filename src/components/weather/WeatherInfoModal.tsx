@@ -31,7 +31,7 @@ const WeatherInfoModal = (props : WeatherInfoModalProps) => {
                         Temperature - {capitalWeatherInfo.temperature}
                     </Typography>
                     {capitalWeatherInfo.weather_icons?.map((weatherIcon) => {
-                        return <img src={weatherIcon} alt="weather_icons" />;
+                        return <img src={weatherIcon} key={weatherIcon} alt="weather_icons" />;
                     })}
                     <Typography gutterBottom>
                         Wind Speed - {capitalWeatherInfo.wind_speed}

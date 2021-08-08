@@ -24,7 +24,7 @@ const CountryList = (props : CountryListProp) => {
                 <Grid container spacing={4}>
                     {countriesList.map((country) => {
                         return (
-                            <Grid item key={country.name} xs={12} sm={6} md={4}>
+                            <Grid item key={country.alpha2Code} xs={12} sm={6} md={4}>
                                 <CountryCard country={country} />
                             </Grid>
                         );
